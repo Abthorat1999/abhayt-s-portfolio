@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e17846adb9.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(3, 3, 57);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            background-color: rgb(50, 50, 100);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: rgb(134, 134, 237);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h6 {
+            color:whitesmoke;
+        }
+        h5{
+            color:black
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        section {
+            padding: 50px 0;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 550px;
+            font-weight: bold;
+            height: 40vh;
+            margin: 15% 0;
+            float: left;
+        }
+
+        #home .firstSection>div {
+            max-width: 35%;
+            min-width: 25%;
+        }
+
+        #home .leftSection {
+            font-size: 2rem;
+        }
+
+        #home .rightSection img {
+            width: 80%;
+            margin-left: 35%;
+            /* margin-bottom: 100%; */
+        }
+
+        .purple {
+            color: rgb(144, 81, 202);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(144, 81, 202);
+        }
+
+
+        /* #home {
+            background-color: #6c757d;
+            color: #fff;
+            text-align: center;
+        }
+
+        #projects {
+            background-color: #f8f9fa;
+        }
+
+        #about {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        #services {
+            background-color: #17a2b8;
+            color: #fff;
+        }
+
+        #contact {
+            background-color: #f8f9fa;
+        } */
+        /*About Me css*/
+        .SSC {
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 0;
+            padding: 1%;
+        }
+
+        .hsc {
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 0;
+            padding: 1%;
+        }
+
+        .BE {
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 0;
+            padding: 1%;
+        }
+
+        .FEmployement {
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 0;
+            padding: 1%;
+        }
+
+        .SEmployement {
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 0;
+            padding: 1%;
+        }
+
+        .AboutMe {
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 0;
+            padding: 1%;
+            color:rgb(240, 235, 235);
+        }
+
+        .footer {
+            background-color: rgb(84, 55, 84);
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: rgb(240, 235, 235);
+            padding: 12px 0;
+            margin-left: 30%;
+        }
+        .card{
+            background-color:white;
+        }
+        #mail{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: baseline;
+        }
+        .social-icons #linkedin{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: baseline;
+        }
+        .social-icons i{
+            align-items: center;
+            padding: 10px;
+        }
+        .contact{
+            justify-content: center;
+            padding: 10px 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Abhay's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5">
+        <div class="container">
+            <section class="firstSection ">
+                <div class="leftSection">
+                    Hi,i am <span class="purple">Abhay</span>...
+                    <div>and I am Passionate</div>
+                    <span id="element"></span>
+                </div>
+                <div class="rightSection">
+                    <img src="ProfilePhoto.png" alt="">
+                </div>
+            </section>
+            <div class="buttons">
+                <div>
+                <button style="padding: 0; margin: 0;">
+                    <a href="Resume-Abhay-Thorat.pdf" download="" class="btn btn-secondary btn-lg">Download CV</a>
+                </button>
+            </div>
+            <div>
+                <button><a href="https://github.com/Abthorat1999?tab=repositories">Visit GitHub</a></button>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2> <i class="fa-regular fa-address-card"></i> About Me</h2>
+            <section class="SSC">
+                <div>
+                    <span class="text-gray">
+                        <h4> <i class="fa-solid fa-school"></i> SSC </h4>
+                    </span>
+                    <h6>In 2015, I successfully completed my SSC with distinction, securing 83 percent from the Maharashtra State Board. Throughout my academic journey,
+                         I actively engaged in a myriad of social activities, fostering a well-rounded personality. Additionally, my passion for sports not only instilled discipline but also taught invaluable teamwork and leadership skills. Alongside my academic pursuits, I cultivated a keen interest in development, honing my abilities to become a well-rounded individual with a strong emphasis on personal growth and community involvement.</h6>
+                </div>
+            </section>
+            <hr>
+            <section class="hsc">
+                <span class="text-gray">
+                    <h4> <i class="fa-solid fa-building-columns"></i> HSC</h4>
+                </span>
+                <h6>In 2017, I achieved my HSC certification with distinction, earning 73 percent from the Maharashtra State Board. 
+                    The rigorous curriculum of the science branch, encompassing subjects such as physics, chemistry, and mathematics, not only provided me with a solid academic foundation but also ignited a profound sense of direction and motivation. Delving into these disciplines fueled my passion for learning and equipped me with critical thinking and problem-solving skills essential for success. This educational journey not only shaped my academic pursuits but also served as a catalyst for personal growth and determination.</h6>
+            </section>
+            <hr>
+            <section class="BE">
+                <span class="text-gray">
+                    <h4> <i class="fas fa-graduation-cap"></i> BE</h4>
+                </span>
+                <h6>I hold a Bachelor of Engineering (BE) in Information Technology from Sanjivani College of Engineering, Kopargaon,
+                     affiliated with Savitribai Phule Pune University, Maharashtra, graduating in 2021 with a CGPA of 7.34. Throughout my academic journey, I prioritized personal development, nurtured leadership qualities, and dedicated significant time to coding practice, enriching my skills in software engineering.</h6>
+            </section>
+            <hr>
+            <section class="FEmployement">
+                <span class="text-gray">
+                    <h4> <i class="fas fa-briefcase"></i> Quiesta Technologies First Employment </h4>
+                </span>
+                <h6>I actively engaged in team dynamics by attending meetings and contributing to brainstorming sessions, fostering collaboration and innovation.
+                    Additionally, I demonstrated attention to detail and adherence to regulatory standards by auditing the company's legal documents to verify compliance with policies and procedures. Concurrently, I am dedicated to expanding my skill set in programming languages such as Java, HTML, JavaScript, and SQL, through focused self-learning initiatives, aiming to bolster my capabilities in software development and contribute effectively to future projects.</h6>
+            </section>
+            <hr>
+            <section class="SEmployement">
+                <span class="text-gray">
+                    <h4> <i class="fas fa-briefcase"></i> SteepGraph System Second Employment </h4>
+                </span>
+                <h6> As a dedicated Front End Developer, I specialize in crafting exceptional user interfaces and seamless API integrations.
+                     With extensive experience in Angular libraries such as Angular Materials and PrimeNG, along with proficiency in React JS projects, I have honed my skills in delivering intuitive and visually appealing web solutions. My contributions primarily focus on UI development, ensuring engaging user experiences, and seamlessly integrating APIs to enhance functionality. Explore my portfolio to witness firsthand the blend of innovation and expertise I bring to every project.</h6>
+            </section>
+            <hr>
+            <section class="AboutMe">
+                <span class="text-CO">
+                    <h2><i class="fa-sharp fa-solid fa-user-tie"></i> Professional Summery</h2>
+                </span>
+                <div>
+                    <span> • Proficient in JavaScript, delivering interactive web applications and complex
+                        functionalities.</span><br>
+                    <span> • Expertise in Core Java, building robust and scalable solutions.</span><br>
+                    <span> • Strong SQL skills for efficient database design and seamless data management.</span><br>
+                    <span> • Skilled in Angular and Vue.js frameworks, creating dynamic and responsive web
+                        applications.</span><br>
+                    <span> • Experienced with Angular CLI, streamlining development processes and enhancing
+                        productivity.</span><br>
+                    <span> • Proficient in Angular Material and Bootstrap, creating visually appealing and responsive UI
+                        components.</span><br>
+                    <span> • HTML5 and CSS3 expertise for modern and visually engaging web pages.</span><br>
+                    <span> • As a React developer, I'm expanding my expertise to include Node.js and MongoDB, crafting applications that seamlessly integrate frontend and backend technologies.</span><br>
+                    <span> • Skilled in jQuery, developing interactive and dynamic web applications.</span><br>
+
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2><i class="fa-solid fa-code"></i> Services</h2>
+            <p>Here are the services I offer:</p>
+            <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>Responsive Design</li>
+                <li>Front-end Development</li>
+                <li>MERN Developer</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2><i class="fa-sharp fa-solid fa-shapes"></i> Projects</h2>
+            <p>Check out some of my projects below:</p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <span class="text-gray">WIRELESS ENTERPRISE RESOURCE PLANNING SYSTEM FOR MSME.</span>
+                            <p style="color: black;">Many of industries uses the ERP system in the particular fields but
+                                as of now many of
+                                senior management
+                                teams does not feel friendly to use the system, so keeping that in to the consideration
+                                we have designed
+                                an ERP system with a virtual assistant to help and make the work done by just using the
+                                voice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <span class="text-gray">CARESOURCE</span>
+                            <p style="color: black;"> Worked on Angular which combines web applications with Component
+                                based MVC capability to
+                                make development and testing of code efficient.
+                                Worked on Angular features like Two Way Binding, Custom Directives, Controllers,
+                                Filters, Services.
+                                Designed Custom Directives using Angular.
+                                Used Angular Directives like ngModel, ngFor, ngClass, ngIf, hidden, etc.
+                                Developed the project's web page as Single Page Application (SPA) by using Angular.
+                                Worked within a lean agile environment and continuous delivery, did pair programming
+                                with Junior/Senior developers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <span class="text-gray">ORGANIZATION INTERNAL PROJECTS</span>
+                            <p style="color: black;">Successfully completed numerous internal projects for my website, 
+                                including the implementation of a feedback form and the development of functionalities for input retrieval from tables and seamless display on the interface. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 4</h5>
+                            <span class="text-gray">ANGULAR PROJECTS</span>
+                            <p style="color: black;">Create many projects using angular projects like E-com
+                                website,Employee Portal with loged in and signUp pages, Gym Registration web application
+                            </p>
+                            <p style="color: black;">You can see E-com project name as Apna Dukan </p>
+                            <span> <a style="color: black;" href="https://abthorat1999.github.io/add-to-cart/"><i
+                                        class="fa-solid fa-truck-fast"></i> Apna Dukan</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact" class="py-5">
+        <div class="container-sm">
+            <h2> <i class="fa-solid fa-address-card"></i> Contact Me</h2>
+            <p>If you have any questions or would like to get in touch, feel free to reach out to me:</p>
+            <div class="row">
+                <div class="col align-self-center ">
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="sendMsg()">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" footer py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>My Portfolio</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <div id="mail"> 
+                            <a href="mailto:thoratabhay58@gmail.com" target="_blank" class="mr-2">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <h6>Mail ID:<a href="mailto:thoratabhay58@gmail.com" target="_blank" style="color: aliceblue;"> thoratabhay58@gmail.com</a></h6>
+                        </div>
+                            <br>
+                        <div id="linkedin">
+                                <a href="https://www.linkedin.com/in/abhaythorat" target="_blank" class="mr-2">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <h6> LinkIn:<a href="https://www.linkedin.com/in/abhaythorat" target="_blank" style="color: aliceblue;"> Abhay Thorat</a></h6>
+                         </div>
+                    </div>
+                </div>
+                <div class="footer-rights">
+                    www.abhay'sportfolio.com | all rights Resserved
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Angular Developer','React Developer'],
+            typeSpeed: 50,
+        });
+        function sendMsg(){  
+        let input = document.getElementById("form")
+        input.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let form = document.querySelector("form");
+            let data = new FormData(form);
+            fetch('https://script.google.com/macros/s/AKfycbz87lzo4GJfSXSlOczybmj0v0Gy4rpBIZZ2Jbqt3kan0o9GxCgnm3yEbfanWjUKyuA5/exec', {
+                method: 'POST',
+                body: data
+            }).then((result) => {
+                // Handle the result
+                result.text();
+            })
+                .then(data => {
+                    console.log(data);
+                    let log=document.getElementById("log");
+                })
+         form.reset();      
+        })
+        alert("Message Has Been sent to Abhay Thorat !!!") 
+    }
+    </script>
+</body>
+
+</html>
